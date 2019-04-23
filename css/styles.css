@@ -1,5 +1,5 @@
 header h1 {
-    color: #0076bb
+    color: #0076bb;
 }
 nav ul {padding: 0;}
 
@@ -11,14 +11,14 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: .5rem 1rem;
-    background-color: #f89clf;
+    background-color:#f89c1f;
 }
 
 main h1 {
     clear: both;
 }
 main img {
-    float: righ  
+    float: right;  
 }
 footer {
     text-align: center;
