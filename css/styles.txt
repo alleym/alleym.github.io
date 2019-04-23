@@ -1,0 +1,9 @@
+header h1 {
+    color: #0076bb;
+}
+nav ul li {
+    float left;
+}
+nav ul li a {
+    display: block;
+}
