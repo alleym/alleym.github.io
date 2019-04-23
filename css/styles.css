@@ -1,25 +1,26 @@
 header h1 {
     color: #0076bb
 }
-nav ul li {
-    float left;
-    list-style-type: none;
+nav ul {padding: 0;}
 
+nav ul li {
+    float: left;
+    list-style-type: none;
 }
+
 nav ul li a {
     display: block;
-    paddig: .5rem 1rem;
+    padding: .5rem 1rem;
     background-color: #f89clf;
-
 }
+
 main h1 {
     clear: both;
 }
 main img {
-    float: right;
-    height: 200px;
-    width: 50%;
+    float: righ  
 }
 footer {
-    text-align: right;
+    text-align: center;
+    clear: both;
 }
