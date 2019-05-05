@@ -1,4 +1,4 @@
-* {-moz-box-sizing: border-box;
+* { -moz-box-sizing: border-box;
 -webkit-box-sizing: border-box; box-sizing: 
 border-box; }
 
@@ -20,11 +20,12 @@ header h1 {
 
 header h2 {
     margin: 0;
-}
+
+/*navigation rules here*/
 
 nav {background-color: #111;}
 nav ul {margin: 0; padding: 0;}
-nav li {list-style-type: left;}
+nav li {list-style-type: none;}
 nav li.active {background-color: #333;}
 
 nav a {
@@ -46,7 +47,7 @@ main {
 main h1 {color: #17a8e4;}
 
 
-main figure image {width: 100%;}
+main figure image {width: 450px;}
 main figure {
     width 100%;
     margin: 0;
