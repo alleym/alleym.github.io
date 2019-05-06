@@ -22,27 +22,15 @@
     header h2 {
         margin: 0;
         color: #333;
+    }
+
 
     /*navigation rules here*/
-    
- nav {background-color: #000;}
-    nav ul {margin: 0; padding: 0;}
-    nav li {
-        list-style-type: none;
-        color: #17a8e4;
-        background=color: #333;
-    }
-    nav li.active {background-color: #333;}
-    
-    nav a {
+
+    nav {
         display: block;
-        padding: .8rem 0; /* 44 min height */
-        color: #eee;
-        text-align: center;
-        text-decoration: none;
-    }
+    } 
     
-    nav a:hover {background-color: #333;}
     
     /* main rules here*/
     main {
@@ -66,17 +54,17 @@
         background-color: #17a8e4;
     
     }
+
+
+
+
+
     
     
     
-    
-    
-    
-    
-    
-    
-    .clearfix: after {
+    .clearfix:after {
         content: "";
-        display: table;
         clear: both;
-    }
+        display: table;
+      }
+    
