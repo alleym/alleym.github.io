@@ -50,10 +50,19 @@ nav ul li.active a {
     color: #fff;
 }
 /*----------- MAIN --------------*/
+
 main {
     padding: 0 2%;
     min-height: 10rem;
 }
+main figure.myphoto {
+        width: 50%;
+        margin: 0 0 0 2%;
+        float: right;
+}
+main figure.myphoto figcaption{text-align: center;font-size: .75rem;}
+        
+main figure.zillow img {width: 100%;}
 
 
 /*----------- FOOTER --------------*/
