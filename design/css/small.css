@@ -15,15 +15,15 @@ body {
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #ddd;
+    background-color: #00E5FF;
 }
 header img{float: left; margin-right: 10px;width: 50px;}
-header h1 {margin: 0; font-size: 1.3rem;}
-header h2 {margin: 0; font-weight: normal; font-size: 1rem;}
+header h1 {margin: 0; font-size: 1.3rem;color: #272147}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #272147 }
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #666;
+    background-color: #272147;
 }
 nav ul {
     list-style-type: none;
@@ -46,7 +46,7 @@ nav ul li a:hover {
     color: #333;
 }
 nav ul li.active a {
-    background-color: #000;
+    background-color: #00E5FF;
     color: #fff;
 }
 /*----------- MAIN --------------*/
@@ -55,21 +55,23 @@ main {
     padding: 0 2%;
     min-height: 10rem;
 }
+main h1 {color: #00E5FF;} 
+
 main figure.myphoto {
         width: 50%;
         margin: 0 0 0 2%;
         float: right;
 }
-main figure.myphoto figcaption{text-align: center;font-size: .75rem;}
+main figcaption {text-align: center;font-size: .75rem;}
         
-main figure.zillow img {width: 100%;}
+main figure.zillow img {width: 50%;}
 
 
 /*----------- FOOTER --------------*/
 footer {
-    background-color: #ddd;
-    padding: .5rem 2%;
-    text-align: center;
+    background-color: #272147;
+    padding: .2rem 2%;
+    text-align: center; color: white;
 }
 
 
