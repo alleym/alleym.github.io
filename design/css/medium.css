@@ -22,9 +22,14 @@
 /*----------- MAIN --------------*/
 
     main figure {width: 50%}
+    main figcaption {text-align: center;font-size: .75rem; padding: 1%}
 
 
 /*----------- FOOTER --------------*/
+footer {
+    background-color: #272147;
+    padding: .1rem 4%;
+    text-align: center; color: white;
  
     
 } /* end of media query */
