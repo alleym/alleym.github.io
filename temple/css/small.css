@@ -27,10 +27,21 @@
 
     /*navigation rules here*/
 
-    nav {
+    nav {background-color: #272147;}
+    nav ul {margin: 0; padding: 0;}
+    nav li {ist-style-type: none;}    }
+    nav li.active {background-color: #333;}
+   
+    nav a {
         display: block;
-    } 
+        padding: .8rem 0;
+        color: #eee;
+        text-align: center;
+        text-decoration: none;
+    }
+    nav a: hover {background-color: #444;}
     
+  
     
     /* main rules here*/
     main {
@@ -39,9 +50,7 @@
     }
     
     main h1 {color: #17a8e4;}   
-    
-    
-    main figure image {width: 100%;}
+
     main figure {
         width 100%;
         margin: 0;
@@ -54,17 +63,9 @@
         background-color: #17a8e4;
     
     }
-
-
-
-
-
-    
-    
-    
-    .clearfix:after {
-        content: "";
-        clear: both;
-        display: table;
-      }
-    
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
