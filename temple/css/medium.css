@@ -13,7 +13,7 @@ header h1 {font-size: 1.5rem;}
 
 /*----------- NAVIGATION --------------*/
 
-nav li {float: left; width: 25%}
+nav li {float: left; width: 18%;}
 nav li {margin-left: 2%;}
 
 
@@ -23,6 +23,7 @@ nav ul li a{padding: .5rem 1rem;}
 /*----------- MAIN --------------*/
 
 main figure {width: 50%}
+main figure.myphoto img {width: 100%;}
 main figcaption {text-align: center;font-size: .75rem; padding: 1%}
 
 

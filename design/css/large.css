@@ -16,8 +16,12 @@
 
 /*----------- NAVIGATION --------------*/
     nav ul (padding-left: 2%;)
-    nav li {width: auto;}
+    nav li {width: left;
+         width: 18%;
+         margin-left: 2%;}
     nav a { padding: .5rem; 1rem;}
+  
+nav ul li a{padding: .5rem 1rem;}
     
 
 

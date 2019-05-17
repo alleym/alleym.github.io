@@ -1,71 +1,86 @@
-* { -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box; box-sizing: 
-    border-box; }
-    
-    /* body rules here*/
-    body {
-        font-family: Verdana;
-        font-size: 16px;
-    }
-    
-    /* header rules here*/
-    header{
-        background-color: #69ccf7;
-        padding: 1rem 2%;
-    }
-    
-    header h1 {
-        margin: 0;
-        color: #ffffff;
-    }
-    
-    header h2 {
-        margin: 0;
-        color: #333;
-    }
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-    /*navigation rules here*/
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
 
-    nav {background-color: #272147;}
-    nav ul {margin: 0; padding: 0;}
-    nav li {ist-style-type: none;}    }
-    nav li.active {background-color: #333;}
-   
-    nav a {
-        display: block;
-        padding: .8rem 0;
-        color: #eee;
-        text-align: center;
-        text-decoration: none;
-    }
-    nav a: hover {background-color: #444;}
-    
-  
-    
-    /* main rules here*/
-    main {
-        padding: 1rem; 2%;
-        diplay: block;    
-    }
-    
-    main h1 {color: #17a8e4;}   
 
-    main figure {
-        width 100%;
-        margin: 0;
-    }
-    main figcaption {text-align: center; font-size: .8rem;}
-    
-    footer {
-        text-align: center;
-        padding: 1rem 2%;
-        background-color: #17a8e4;
-    
-    }
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #141159;
+}
+header img{float: left; margin-right: 10px;width: 50px;}
+header h1 {margin: 0; font-size: 1.3rem;color: #ffffff}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #000000; }
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #000000;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #6f6869;;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+main h1 {color: #141159;} 
+
+main figure {
+    width: 100%;
+    margin: 0 0 0 2%;       
+    float: right;
+}   
+main figure.myphoto img {width: 100%;}
+
+main figcaption {text-align: center;font-size: .75rem; padding: 1%} 
+
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #141159;
+    padding: .5rem 2%;
+    text-align: center; color: #ffffff;
+    clear: both;
+}
+
+
+
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+  content: "";
+  display: table;
+  clear: both;
+}
