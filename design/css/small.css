@@ -61,14 +61,14 @@ main {
 }
 main h1 {color: #00E5FF;} 
 
-main figure.myphoto {
+main figure {
         width: 50%;
         margin: 0 0 0 2%;       
         float: right;
 }
-main figure.myphoto img {width: 100%}
+main figure {width: 100%}
 
-main figcaption {text-align: center;font-size: .75rem; padding: 1%}
+main figcaption {text-align: center; font-size: .75rem; padding: 1%;}
         
 
 

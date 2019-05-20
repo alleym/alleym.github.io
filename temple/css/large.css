@@ -1,10 +1,7 @@
 /* 64em is also 1028px (if basefont is 16px) */
 @media only screen and (min-width: 64rem) {
 
-    header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
-    }
+nav, header, footer, main {max-width: 75rem; margin: auto;}
 
 /*----------- BODY --------------*/
 
@@ -15,22 +12,26 @@
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul (padding-left: 2%;)
-     nav li {width: left; width: 20%;}
-    nav a { padding: .5rem; 1rem;}
+ 
+nav ul {padding-left: 2%;}
+nav li {width: auto;}
+nav a {padding: .5rem 1rem;}
+ 
     
 
 
 /*----------- MAIN --------------*/
 
-    main figure {width: 33%}
-    main figcaption {text-align: center;font-size: .75rem; padding: 1%}
 
+    main figure {width: 31%}
+   
+
+    div.news {column-count: 3;}
 
 /*----------- FOOTER --------------*/
 footer {
     background-color: #272147;
-    padding: .1rem 4%;
+    padding: .1rem 2%;
     text-align: center; color: white;
 
 

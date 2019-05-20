@@ -19,7 +19,7 @@ header {
 }
 header img{float: left; margin-right: 10px;width: 50px;}
 header h1 {margin: 0; font-size: 1.3rem;color: #ffffff}
-header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #000000; }
+header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #ffffff; }
 
 /*----------- NAVIGATION --------------*/
 nav {
@@ -30,13 +30,14 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+nav li {list-style-type: none;}
 
-nav ul li a {
+nav a {
+   
     display: block;
     color: #eee;
-    padding: .5rem 0;
+    padding: .8rem 0;
     text-decoration: none;
-    font-size: .9rem;
     text-align: center;
 }
 
@@ -44,11 +45,12 @@ nav ul li a:hover {
     background-color: #aaa;
     color: #333;
 }
-nav ul li.active a {
-    background-color: #6f6869;;
+nav li.active {
+    background-color: #6f6869;
     color: #fff;
 }
 /*----------- MAIN --------------*/
+
 
 main {
     padding: 0 2%;
@@ -56,14 +58,13 @@ main {
 }
 main h1 {color: #141159;} 
 
+main figure img {width: 100%;}   
 main figure {
     width: 100%;
-    margin: 0 0 0 2%;       
-    float: right;
-}   
-main figure.myphoto img {width: 100%;}
+    margin: 0;
+}
 
-main figcaption {text-align: center;font-size: .75rem; padding: 1%} 
+main figcaption {text-align: center;font-size: .8rem; padding: 1%} 
 
 
 
