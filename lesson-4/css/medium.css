@@ -1,13 +1,25 @@
 /* 35em is also 560px (if basefont is 16px) */
 @media only screen and (min-width: 35rem) {
 
+    
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+  }
+
 
 /*----------- BODY --------------*/
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
 
 
 
 /*----------- HEADER --------------*/
-    header img{width: auto;}
+
+    header img {width: auto;}
     header h1 {font-size: 2rem;}
     header h1 {font-size: 1.5rem;}
 
@@ -33,7 +45,7 @@ footer {
     background-color: #ed1a37;
     padding: .5rem 2%;
     text-align: center; color: #ffffff;
-    clear: both;
- 
-    
-} /* end of media query */
+    clear: both;}
+
+}
+    /* end of media query */

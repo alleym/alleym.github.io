@@ -15,9 +15,9 @@
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul (padding-left: 2%;)
+    nav ul {padding-left: 2%;}
     nav li {width: auto;}
-    nav a { padding: .5rem; 1rem;}
+    nav a {padding: .5rem 1rem;}
     
 
 
@@ -36,7 +36,7 @@ footer {
     background-color: #ed1a37;
     padding: .5rem 2%;
     text-align: center; color: #ffffff;
-    clear: both;
+    clear: both;}
 
     
-} /* end of media query */
+}/* end of media query */
