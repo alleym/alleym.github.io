@@ -40,6 +40,20 @@ main figure {
     float: right;
 }   
 main figure.myphoto img {width: 100%;}
+
+table {display: table;}
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  
+  th {
+    background-color: #ed1a37;
+    color: white;
+  }
+
 /*----------- FOOTER --------------*/
 footer {
     background-color: #ed1a37;

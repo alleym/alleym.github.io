@@ -29,6 +29,7 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+nav li {list-style-type: none;}
 
 nav ul li a {
     display: block;
@@ -44,7 +45,7 @@ nav ul li a:hover {
     color: #333;
 }
 nav ul li.active a {
-    background-color: #6f6869;;
+    background-color: #6f6869;
     color: #fff;
 }
 /*----------- MAIN --------------*/
@@ -53,19 +54,56 @@ main {
     padding: 0 2%;
     min-height: 10rem;
 }
-main h1 {color: #ed1a37;} 
 
+main h1 {color: #ed1a37;} 
+main h2 {color: #ed1a37;}
+main h3 {color: #ffffff;}
+
+.overlay {
+    position: relative;
+    width: 50%;
+    border: black;
+}
+.overlay {width: 100%;}
+.image2 {
+    display: block;
+    width: 50%;
+    height: auto;
+    border: solid black;
+  }
+ .image2 {width: 100%;}
+
+.weathersummary {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    width: 200px;
+    height: 220px;
+    padding: .5rem;
+    border: solid black;
+    background: #ed1a37;
+    box-shadow: 0 0 30px #ed1a37;
+}
+
+.weathersummary:hover {
+    opacity: 0.8;
+}
+table {display: none;}
 main figure {
     width: 50%;
-    margin: 0 0 0 2%;       
+    margin: 0 0 0 5%;       
     float: right;
+    padding: .5px;
 }   
-main figure.myphoto img {width: 100%;}
 
-main figcaption {text-align: center;font-size: .75rem; padding: 1%} 
-
+main figure .myphoto {width: 100%;}
 
 
+main figcaption {
+    text-align: center;
+    font-size: .75rem;
+    padding: 1%;
+} 
 
 /*----------- FOOTER --------------*/
 footer {
