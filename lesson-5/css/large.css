@@ -22,12 +22,18 @@
 
 
 /*----------- MAIN --------------*/
-main figure {
+main figure.myphoto {
     width: 33%;
     margin: 0 0 0 2%;       
-    float: right;
 }   
 main figure.myphoto img {width: 100%;}
+
+.image2 {
+    width: 33%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+.image2 img {width: 100%;}
 
 table {display: table;}
 

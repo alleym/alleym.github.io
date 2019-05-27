@@ -65,13 +65,14 @@ main h3 {color: #ffffff;}
     border: black;
 }
 .overlay {width: 100%;}
-.image2 {
+
+main figure.myphoto {
     display: block;
     width: 50%;
-    height: auto;
-    border: solid black;
-  }
- .image2 {width: 100%;}
+    height: auto;   
+}   
+
+main figure.myphoto img {width: 100%;}
 
 .weathersummary {
     position: absolute;
@@ -88,15 +89,20 @@ main h3 {color: #ffffff;}
 .weathersummary:hover {
     opacity: 0.8;
 }
-table {display: none;}
-main figure {
+
+.image2 { 
     width: 50%;
     margin: 0 0 0 5%;       
     float: right;
-    padding: .5px;
-}   
+    padding: .5px;   
+  }
 
-main figure .myphoto img {width: 100%;}
+ .image2 img {width: 100%;}
+
+
+table {display: none;}
+
+
 
 
 main figcaption {

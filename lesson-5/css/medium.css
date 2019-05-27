@@ -34,12 +34,18 @@ nav ul li {float: left; width: 16%;}
 
 /*----------- MAIN --------------*/
 
-main figure {
+main figure.myphoto {
     width: 50%;
     margin: 0 0 0 2%;       
-    float: right;
 }   
 main figure.myphoto img {width: 100%;}
+
+.image2 {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+.image2 img {width: 100%}
 
 table {display: table;}
 th, td {
