@@ -96,7 +96,7 @@ main figure {
     padding: .5px;
 }   
 
-main figure .myphoto {width: 100%;}
+main figure .myphoto img {width: 100%;}
 
 
 main figcaption {
