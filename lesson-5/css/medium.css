@@ -34,11 +34,6 @@ nav ul li {float: left; width: 16%;}
 
 /*----------- MAIN --------------*/
 
-main figure.myphoto {
-    width: 50%;
-    margin: 0 0 0 2%;       
-}   
-main figure.myphoto img {width: 100%;}
 
 .image2 {
     width: 50%;

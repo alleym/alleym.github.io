@@ -68,8 +68,9 @@ main h3 {color: #ffffff;}
 
 main figure.myphoto {
     display: block;
-    width: 50%;
-    height: auto;   
+    width: 100%;
+    height: auto; 
+    margin: 0;  
 }   
 
 main figure.myphoto img {width: 100%;}
@@ -78,8 +79,8 @@ main figure.myphoto img {width: 100%;}
     position: absolute;
     top: 10px; 
     left: 10px;
-    width: 200px;
-    height: 220px;
+    width: 170px;
+    height: 180px;
     padding: .5rem;
     border: solid black;
     background: #ed1a37;
