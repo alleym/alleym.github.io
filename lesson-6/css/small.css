@@ -1,0 +1,136 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ed1a37;
+}
+header img{float: left; margin-right: 10px;width: 50px;}
+header h1 {margin: 0; font-size: 1.3rem;color: #ffffff}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #000000; }
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #000000;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav li {list-style-type: none;}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #6f6869;
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+
+main h1 {color: #ed1a37;} 
+main h2 {color: #ed1a37;}
+main h3 {color: #ffffff;}
+
+.overlay {
+    position: relative;
+    width: 50%;
+    border: black;
+}
+.overlay {width: 100%;}
+
+main figure.myphoto {
+    display: block;
+    width: 100%;
+    height: auto; 
+    margin: 0;  
+}   
+
+main figure.myphoto img {width: 100%;}
+
+.weathersummary {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    width: 170px;
+    height: 180px;
+    padding: .5rem;
+    border: solid black;
+    background: #ed1a37;
+    box-shadow: 0 0 30px #ed1a37;
+}
+
+.weathersummary:hover {
+    opacity: 0.8;
+}
+.franklin {position: relative;}
+.small {display: small;}
+.small {
+    position: absolute;
+    top: 10px;
+    left: 30 px;
+}
+.large {display:none;}
+
+
+.image2 { 
+    width: 50%;
+    margin: 0 0 0 5%;       
+    float: right;
+    padding: .5px;   
+  }
+
+ .image2 img {width: 100%;}
+
+
+table {display: none;}
+
+main figcaption {
+    text-align: center;
+    font-size: .75rem;
+    padding: 1%;
+} 
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ed1a37;
+    padding: .5rem 2%;
+    text-align: center; color: #ffffff;
+    clear: both;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
