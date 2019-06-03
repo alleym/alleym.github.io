@@ -27,7 +27,7 @@ nav {
 nav button {
     margin: .2rem 2%;
     background-color: transparent;
-    border: none:
+    border: none;
     font-size: 1.6rem;
     color: #ffffff;
 }
@@ -47,6 +47,7 @@ nav ul li a {
     text-decoration: none;
     font-size: .9rem;
     text-align: center;
+    margin: 0 0 0 auto;
 }
 
 nav ul li a:hover {
@@ -101,9 +102,8 @@ main figure.myphoto img {width: 100%;}
     opacity: 0.8;
 }
 .franklin {
-    float: center;
-    border: 1px red dashed;
-    margin: 0 0 0 0;
+   position: relative;
+     margin: 0 0 0 0;
 }
 .franklin {width: 100%;}
 
