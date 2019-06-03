@@ -33,14 +33,14 @@
         
     <!-- NAVIGATION HERE -->
         <nav class="clearfix">
-            <ul >
-                    <li><a href="#" title="HOme" onclick="toggleMenu()">&#9776; Home</a></li>
+           <button onclick="toggleMenu()">&#9776;</button>
+            <ul id="primaryNav" class="hide">             
+              <li><a href="#">Home</a></li>
                 <li class="active"><a href="preston.html">Preston</a></li>
                 <li><a href="#">Soda Springs</a></li>
                 <li><a href="#">Fish Haven</a></li> 
                 <li><a href="#">Storm Center</a></li>
                 <li><a href="#">Gallery</a></li>    
-
             </ul>
         </nav>
 
@@ -106,25 +106,23 @@
                 <td>12%</td>
                 <td>100%</td>
                       </tr>
-          </table>
+          </table>      
 
           <br>
           <br>
           <br>
-
+               <div>
           <figure class="franklin">        
               <picture>
-              <source srcset="images/franklinorginallarge.jpg" media="(min-width:560px)">
-                <section class="large">
-                        <h1>LARGE</h1>
-                      </section>
-              <img src="images/franklinorginalsmall.jpg" alt="smallfranklin">
-              <section class="small">
-                    <h1>SMALL</h1>
-              </section>
-            
+                  <img src="images/franklinorginal200.jpg" alt="smallfranklin" sizes="90vw"         
+                        srcset="images/franklinorginal400.jpg 400w,   
+                        images/franklinorginal560.jpg 560w, 
+                        images/franklinorginal800.jpg 800w,    
+                        images/franklinorginal1100.jpg 1100w">
           </picture>
-          </figure>
+          </figure>        
+          
+        </div>
 
           <h2>This Day in History</h2>       
 
@@ -150,8 +148,15 @@
 
 <footer class="clearfix">
 
-        &copy; Michelle Alley
+        <script>
+                <span id="javascript/currentDate.js"></span>
+                </script>    
+    &copy; Michelle Alley
 </footer>
+<script>
+<span id="javascript/currentDate.js"></span>
+</script>
+        
 </body>
 
 </html>

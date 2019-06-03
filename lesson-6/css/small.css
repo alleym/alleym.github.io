@@ -24,6 +24,15 @@ header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #000000; }
 nav {
     background-color: #000000;
 }
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none:
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+nav ul.hide {display: none;}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -48,6 +57,7 @@ nav ul li.active a {
     background-color: #6f6869;
     color: #fff;
 }
+
 /*----------- MAIN --------------*/
 
 main {
@@ -90,15 +100,12 @@ main figure.myphoto img {width: 100%;}
 .weathersummary:hover {
     opacity: 0.8;
 }
-.franklin {position: relative;}
-.small {display: small;}
-.small {
-    position: absolute;
-    top: 10px;
-    left: 30 px;
+.franklin {
+    float: center;
+    border: 1px red dashed;
+    margin: 0 0 0 0;
 }
-.large {display:none;}
-
+.franklin {width: 100%;}
 
 .image2 { 
     width: 50%;
@@ -107,7 +114,7 @@ main figure.myphoto img {width: 100%;}
     padding: .5px;   
   }
 
- .image2 img {width: 100%;}
+.image2 img {width: 100%;}
 
 
 table {display: none;}
