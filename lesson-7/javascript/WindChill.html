@@ -1,0 +1,26 @@
+
+
+     <script>
+
+      function doInputOutput() {
+
+
+        // Input two values from the users; The outside temp in Faherenheit and the Windspeed.
+        var tempf = parseInt(document.getElementById("WindChill").innerHTML);
+        var speed = parseInt(document.getElementById("Wind").value).innerHTML;
+        var W = windChill(tempF, speed);
+
+        //output for  the windchill function
+            document.getElementById("windDiv").innerHTML = W + " Faherenheit"; 
+        }
+
+        //calculate the windchill using the windchill factor below and round to nearest 100
+        function windChill(tempF, speed) {
+            var W = 35.74 + .6215 * tempF - 35.75 * Math.pow(speed, 0.16) + .4275 * tempF * Math.pow(speed, 0.16);
+        //round to two digits 
+            W = Math.round(W);
+
+        //return calculation back to the doINputOutpu function and let the answer print on the screen
+              return W;
+        }
+

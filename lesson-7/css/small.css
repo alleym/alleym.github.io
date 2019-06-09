@@ -16,9 +16,14 @@ header {
     padding: .5rem 2%;
     background-color: #ed1a37;
     display: grid;
-    grid-template-columns: 155px auto;
+    grid-template-columns: 160px auto;
 }
-header img{float: left; margin-right: 10px;width: 50px;}
+header img {
+    float: left;
+    margin-right: 0;
+    
+}
+
 header h1 {margin: 0; font-size: 1.2rem; color: #ffffff; margin-top: .5rem}
 header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #000000; }
 
@@ -64,9 +69,21 @@ nav ul li.active a {
 /*----------- MAIN --------------*/
 
 main {
-    padding: 0 2%;
+    padding: 0;
     min-height: 10rem;
 }
+/*gallery page*/
+
+div.weatherGallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 2%;
+   }
+
+div.weatherGallery figure {flex-basis: 96%;}
+div.weatherGallery figure img {flex-basis: 100%;}
+
+
 
 main h1 {color: #ed1a37;} 
 main h2 {color: #ed1a37;}
@@ -127,6 +144,7 @@ main figcaption {
     padding: 1%;
 } 
 
+
 /*----------- FOOTER --------------*/
 footer {
     background-color: #ed1a37;
@@ -134,6 +152,12 @@ footer {
     text-align: center; color: #ffffff;
     clear: both;
 }
+.time {
+    font-size: 16px;  #ed1a37;
+    float: center; 
+    
+}
+
 
 
 
