@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="Michelle" content="weather">
+     <!--Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+
+    <!-- Website built by Michelle Alley  -->
+<title>Weather Webpage</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- STYLE SHEETS -->
+<link href="css/normalize.css" rel="stylesheet">
+
+<link href="css/small.css" rel="stylesheet">
+
+<link href="css/medium.css" rel="stylesheet">
+
+<link href="css/large.css" rel="stylesheet">   
+
+</head>
+<body>
+  
+    <!-- HEADER HERE -->
+       <header class="clearfix">
+          <img src="images/stormteam.jpg" alt="stormteam logo">
+            <div>
+                <h1>The Storm Team</h1>
+                <h2>Oklahoma's Tornado Center</h2>
+            </div>
+        </header>        
+        
+    <!-- NAVIGATION HERE -->
+        <nav class="clearfix">
+            <div class="toggle">
+           <button onclick="toggleMenu()">&#9776;</button>
+        </div>
+            <ul id="primaryNav" class="hide">             
+              <li><a href="#">Home</a></li>
+              <li><a href="preston.html">Preston</a></li> 
+              <li><a href="#">Soda Springs</a></li>
+                <li><a href="#">Fish Haven</a></li> 
+                <li><a href="#">Storm Center</a></li>
+                <li class="active"><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+<main class="clearfix">
+    <h1>Gallery</h1>  
+    <div class="weatherGallery">    
+    <figure><img src="images/calamitycloud.jpg" alt="weather"><figcaption>Mulitple Tornadoes</figcaption></figure>
+    <figure><img src="images/cloudsoverfield.jpg" alt="weather"><figcaption>Storms Coming.</figcaption></figure>
+    <figure><img src="images/lightening.jpg" alt="weather"><figcaption>Lightening</figcaption></figure>
+    <figure><img src="images/sunnyfield.jpg" alt="weather"><figcaption>Sunny Days Ahead.</figcaption></figure>
+    <figure><img src="images/tornadohighway.jpg" alt="weather"><figcaption>Tornado over Highway.</figcaption></figure>
+    <figure><img src="images/rainbow.jpg" alt="weather"><figcaption>Rainbow after the Storm.</figcaption></figure>
+</div> 
+</main>
+<footer class="clearfix">
+      
+    &copy; Michelle Alley
+</footer>
+<body>
+  
+    <script type="text/javascript" src="javascript/currentdate.js"></script>
+    <script type="text/javascript" src="javascript/hamburger.js"></script>    
+        
+</body>
+
+</html>
