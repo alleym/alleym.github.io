@@ -205,6 +205,17 @@ main figure.preston img {
 }
 main figure.preston img {width: 100%;}
 
+main figure.soda img {
+    margin: 0;
+    width: 100%;
+}
+main figure.soda img { width: 100%;}
+main figure.fish img {
+    margin: 0;
+    width: 100%;
+}
+maing figure.fish img {width: 100%;}
+
 div.towninfo section {padding: 0 2%;}
 div.towninfo {clear: both;} 
 

@@ -12,8 +12,8 @@
         "December 1 - 26: Christmas in the Heart"
       ]
     },
-    
-    {
+    { "fish" : [
+     {   
       "name": "Fish Haven",
       "motto": "This is Fish Heaven.",
       "yearFounded": 1864,
@@ -32,7 +32,8 @@
       "yearFounded": 1805,
       "currentPopulation": 33458,
       "averageRainfall": 25,
-      "events" : [
+    }
+    {  "events" : [
         "February 10-12: Greenbration",
         "May 8 - 18: Greenville Founder Days",
         "June 20: Verde and Valiant Day",
@@ -50,7 +51,8 @@
         "October 20: Fall through Fall"
       ]
     },
-    {
+    { "fish" : [
+     {   
       "name": "Preston",
       "motto": "Home of Napoleon Dynamite.",
       "yearFounded": 1866,
@@ -62,7 +64,8 @@
         "November 2-4: Freedom Days"
       ]
     },
-    {
+    { "soda" : [
+        {   
       "name": "Soda Springs",
       "motto": "Historic Oregon Trail Oasis. The Soda is on Us.",
       "yearFounded": 1858,
