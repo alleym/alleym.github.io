@@ -1,56 +1,37 @@
+//create an object
+var myRequestObject = new XMLHttpRequest();
 
-var header = document.querySelector('header');
-    var section = document.querySelector('section');
-    var requestURL = 'towndata.json';
-    var request = new XMLHttpRequest();
-    request.open('GET', requestURL);
-    request.responseType = 'json';
-request.send();
+//enter the path to the local json file
+var myRequestURL = "towndata.json";
 
-request.onload = function() {
-  var townStuff = request.response;
-  populateHeader(townStuff);
-  showHeroes(townStuff);
-}
-function populateHeader(jsonObj) {
-  var myH1 = document.createElement('h1');
-  myH1.textContent = jsonObj['town'];
-  header.appendChild(myH1);
-
-  var myPara = document.createElement('p');
-  myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' / founded: ' + jsonObj['yearFounded'];
-  header.appendChild(myPara);
+//Now we will create a global container called myWeatherInfo which can be used anywhere in the script.
+let myWeatherInfo;
+myRequestObject.open("GET", myRequestURL);
+myRequestObject.send();
+myRequestObject.onload = function() {
+    myWeatherInfo = JSON.parse(myRequestObject.responseText);
+    console.log(myWeatherInfo);
+	
+	//make a call to the function below for each town and send the array number of the needed town. Ppon returning insert it as html inside the id for each city
+	document.getElementById("spring").innerHTML = assembleData(6);
+	document.getElementById("soda").innerHTML = assembleData(5);
+	document.getElementById("place").innerHTML = assembleData(3);
 }
 
-function showHeroes(jsonObj) {
-  var heroes = jsonObj['motto'];
-      
-  for (var i = 0; i < heroes.length; i++) {
-    var myArticle = document.createElement('article');
-    var myH2 = document.createElement('h2');
-    var myPara1 = document.createElement('p');
-    var myPara2 = document.createElement('p');
-    var myPara3 = document.createElement('p');
-    var myList = document.createElement('ul');
-
-    myH2.textContent = heroes[i].name;
-    myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
-    myPara2.textContent = 'Age: ' + heroes[i].age;
-    myPara3.textContent = 'Superpowers:';
-        
-    var superPowers = heroes[i].powers;
-    for (var j = 0; j < superPowers.length; j++) {
-      var listItem = document.createElement('li');
-      listItem.textContent = superPowers[j];
-      myList.appendChild(listItem);
-    }
-
-    myArticle.appendChild(myH2);
-    myArticle.appendChild(myPara1);
-    myArticle.appendChild(myPara2);
-    myArticle.appendChild(myPara3);
-    myArticle.appendChild(myList);
-
-    section.appendChild(myArticle);
-  }
+function assembleData(x) {
+	//make sure the town data is being loaded for the variale x
+	console.log(myWeatherInfo.towns[x]);
+	
+	//Build the html as a javascript variable and include the html tags
+	let townInfo = "<h2>"+myWeatherInfo.towns[x].name+"</h2>";
+	townInfo += "<i>"+myWeatherInfo.towns[x].motto+"</i>";
+	townInfo += "<p>Year founded: "+myWeatherInfo.towns[x].yearFounded+"</p>";
+	townInfo += "<p>Current Population: "+myWeatherInfo.towns[x].currentPopulation+"</p>";
+	townInfo += "<p>Rainfall: "+myWeatherInfo.towns[x].averageRainfall+"</p>";
+         
+	//return the variable that now has all the town information
+	return townInfo;
 }
+
+//let townNames = jsonObj["towns"][1],["towns"][4],["towns"][5];
+//console.log(townNames);
