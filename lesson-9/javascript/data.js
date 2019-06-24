@@ -1,37 +1,70 @@
+//Where I want to put it
+var article = document.querySelector('article');
+
+//enter the path to the local json file
+var myRequestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+
 //create an object
 var myRequestObject = new XMLHttpRequest();
 
-//enter the path to the local json file
-var myRequestURL = "towndata.json";
 
-//Now we will create a global container called myWeatherInfo which can be used anywhere in the script.
+
+
 let myWeatherInfo;
 myRequestObject.open("GET", myRequestURL);
+myRequestObject.responseType = 'json';
 myRequestObject.send();
 myRequestObject.onload = function() {
-    myWeatherInfo = JSON.parse(myRequestObject.responseText);
-    console.log(myWeatherInfo);
+    myWeatherInfo = myRequestObject.response;
+	console.log(myWeatherInfo);
+	assembleData(myWeatherInfo);
+}
 	
-	//make a call to the function below for each town and send the array number of the needed town. Ppon returning insert it as html inside the id for each city
-	document.getElementById("preston").innerHTML = assembleData(6);
-	document.getElementById("fish").innerHTML = assembleData(5);
-	document.getElementById("soda").innerHTML = assembleData(3);
+	
+function assembleData(weatherinfo) {
+	console.log(weatherinfo);
+
+var towns= weatherinfo['towns'];
+ 
+for (var i=0;i<towns.length;i++) {
+
+	if (towns[i].name=="Preston"||towns[i].name=="Fish Haven"||towns[i].name=="Soda Springs") {
+
+	
+	var myAside = document.createElement('aside');
+    var myH2 = document.createElement('h2');
+    var myPara1 = document.createElement('p');
+    var myPara2 = document.createElement('p');
+    var myPara3 = document.createElement('p');
+	
+	var myImage = document.createElement('img');
+
+	myH2.textContent = towns[i].name+' '+towns[i].yearFounded;
+    myPara1.textContent = 'Motto: ' +towns[i].motto;
+    myPara2.textContent = 'Current Population: ' +towns[i].currentPopulation;
+	myPara3.textContent = 'Rainfall:' +towns[i].averageRainfall;
+
+	if (towns[i].name=="Preston") {
+		myImage.setAttribute('src', 'images/Preston.jpg');
+		myImage.setAttribute('alt', 'Preston');
+	}
+	else if (towns[i].name=="Fish Haven") {
+		myImage.setAttribute('src', 'images/fishhaven.jpg');
+		myImage.setAttribute('alt', 'fish');
+	}
+	else if (towns[i].name=="Soda Springs") {
+		myImage.setAttribute('src', 'images/sodasprings.jpg');
+		myImage.setAttribute('alt', 'soda');
+	}
+	myAside.appendChild(myImage);
+	myAside.appendChild(myH2);
+	myAside.appendChild(myPara1);
+	myAside.appendChild(myPara2);
+	myAside.appendChild(myPara3);
+	
+
+	article.appendChild(myAside);
+}
+}
 }
 
-function assembleData(x) {
-	//make sure the town data is being loaded for the variale x
-	console.log(myWeatherInfo.towns[x]);
-	
-	//Build the html as a javascript variable and include the html tags
-	let townInfo = "<h2>"+myWeatherInfo.towns[x].name+"</h2>";
-	townInfo += "<i>"+myWeatherInfo.towns[x].motto+"</i>";
-	townInfo += "<p>Year founded: "+myWeatherInfo.towns[x].yearFounded+"</p>";
-	townInfo += "<p>Current Population: "+myWeatherInfo.towns[x].currentPopulation+"</p>";
-	townInfo += "<p>Rainfall: "+myWeatherInfo.towns[x].averageRainfall+"</p>";
-         
-	//return the variable that now has all the town information
-	return townInfo;
-}
-
-//let townNames = jsonObj["towns"][1],["towns"][4],["towns"][5];
-//console.log(townNames);

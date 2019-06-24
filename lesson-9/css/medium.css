@@ -65,9 +65,13 @@ th, td {
     color: white;
   }
 
-div.towninfo section:nth-child(2) {width: 50%; float: left;}
-div.towninfo section:nth-child(3) {width: 50%; float: left;}
-
+  .towns {
+      display: flex;
+      justify-content: space-between;
+  }
+.towns aside {
+    width: 30%;
+}
 
  
 /*----------- FOOTER --------------*/
