@@ -45,7 +45,7 @@ for (var i=0;i<towns.length;i++) {
 	myPara3.textContent = 'Rainfall:' +towns[i].averageRainfall;
 
 	if (towns[i].name=="Preston") {
-		myImage.setAttribute('src', 'images/Preston.jpg');
+		myImage.setAttribute('src', 'images/preston.jpg');
 		myImage.setAttribute('alt', 'Preston');
 	}
 	else if (towns[i].name=="Fish Haven") {
