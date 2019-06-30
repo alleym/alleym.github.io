@@ -1,7 +1,7 @@
 var article = document.querySelector('current-temp');
 
 const weatherRequest = new XMLHttpRequest();
-weatherRequest.open("Get", "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=7ed453f48c92067d0a65b95dfbaaaf65", true);
+weatherRequest.open("Get", "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=745e2114b5dd620dfae3029790e79f3d", true);
 weatherRequest.responeType = "json";
 weatherRequest.send();
 weatherRequest.onload = function () {
