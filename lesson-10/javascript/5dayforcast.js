@@ -2,7 +2,7 @@ var article = document.querySelector('article');
 
 
 const weatherRequest = new XMLHttpRequest();
-weatherRequest.open("Get", "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=23ce238bfc48a5932508ab3280bf491b", true);
+weatherRequest.open("Get", "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=62a1ef011397ca3b701c6e07cdb3cb67", true);
 weatherRequest.responeType = "json";
 weatherRequest.send();
 weatherRequest.onload = function () {
