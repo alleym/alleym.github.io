@@ -1,4 +1,4 @@
-
+let article = document.querySelector('windC');
       function findWindChill() {    
           console.log('I am here inside the function');
         var speed = parseInt(document.getElementById('speed').textContent);    
@@ -8,7 +8,7 @@
         console.log(aveTemp,speed);
         var windChill = windChillcal(aveTemp, speed); 
         //output for  the windchill function
-            document.getElementById("output").innerHTML = windChill; 
+            document.getElementById("windC").innerHTML = windChill; 
         }
 
         //calculate the windchill using the windchill factor below and round to nearest 100
