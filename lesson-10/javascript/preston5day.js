@@ -12,7 +12,7 @@ requestWeather.onload = function () {
    function assembleData(weatherinfo) {
     console.log(weatherinfo);
     
-    var iconcode = weatherData.list[i].weather[0].icon;
+    var iconcode = weatherData.list[0].weather[0].icon;
             var weather_icon = "//openweathermap.org/img/w/" + iconcode + ".png";
             var theIcon = document.createElement("images/placeholder.png");
             theIcon.src = weather_icon;
