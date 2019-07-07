@@ -6,23 +6,13 @@ requestWeather.send();
 requestWeather.onload = function () {
    let weatherData = JSON.parse(requestWeather.responseText);
    console.log(weatherData);
-   assembleData(weatherData);
-}
-
-   function assembleData(weatherinfo) {
-    console.log(weatherinfo);
-    
-    var iconcode = weatherData.list[0].weather[0].icon;
-            var weather_icon = "//openweathermap.org/img/w/" + iconcode + ".png";
-            var theIcon = document.createElement("images/placeholder.png");
-            theIcon.src = weather_icon;
-
-
-
-
    
+document.getElementById("tableTemp").innerHTML = weatherData.list.main[1].temp;
 
    
 }
+
+  
+
 
 	

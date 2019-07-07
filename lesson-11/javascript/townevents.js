@@ -8,14 +8,15 @@ myRequestObject.send();
 
 myRequestObject.onload = function() {
        
-let theEvents = myRequestObject.response;
-    document.getElementById("Preston").innerHTML = theEvents.towns[4].name;
-    document.getElementById("pEvents").innerHTML = theEvents.towns[4].events;
+var theEvents = myRequestObject.response;
 
-    document.getElementById("sodaSprings").innerHTML = theEvents.towns[1].name;
-    document.getElementById("sEvents").innerHTML = theEvents.towns[1].events;
+document.getElementById("fishHaven").innerHTML = theEvents.towns[1].name;
+document.getElementById("fEvents").innerHTML = theEvents.towns[1].events;
 
-    document.getElementById("fishHaven").innerHTML = theEvents.towns[5].name;
-    document.getElementById("fEvents").innerHTML = theEvents.towns[5].events;
+document.getElementById("Preston").innerHTML = theEvents.towns[4].name;
+document.getElementById("pEvents").innerHTML = theEvents.towns[4].events;
+document.getElementById("sodaSprings").innerHTML = theEvents.towns[5].name;
+document.getElementById("sEvents").innerHTML = theEvents.towns[5].events;
+   
     }
         

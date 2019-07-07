@@ -13,4 +13,5 @@ weatherRequest.onload = function () {
    document.getElementById('windSpeed').innerHTML = weatherData.wind.speed;
    document.getElementById('humidTemp').innerHTML = weatherData.main.humidity;
 
+   
 }
