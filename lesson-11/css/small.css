@@ -1,0 +1,248 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ed1a37;
+    display: grid;
+    grid-template-columns: 160px auto;
+}
+header img {
+    float: left;
+    margin-right: 0;
+    
+}
+
+header h1 {margin: 0; font-size: 1.2rem; color: #ffffff; margin-top: .5rem}
+header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #000000; }
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #000000;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+nav ul.hide {display: none;}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav li {list-style-type: none;}
+
+nav ul li a {
+    display: block;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    margin: 0 0 0 auto;
+}
+
+nav ul li a:hover {
+    background-color: #aaa;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: #6f6869;
+    color: #fff;
+}
+
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0;
+    min-height: 10rem;
+}
+/*gallery page*/
+
+div.weatherGallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 2%;
+   }
+
+div.weatherGallery figure {flex-basis: 96%;}
+div.weatherGallery figure img {flex-basis: 100%;}
+
+/*Storm Center*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #7a7979;
+    border-radius: 8px;
+    padding: .5rem 2%;
+} 
+form legend {
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 0 1 rem;
+    padding 0 .5rem;
+}
+
+
+form label.top {
+    display: block;
+    padding-top: .75rem;
+    color: #ed1a37;
+    font-size: .8rem;
+}
+form label.danger {
+    display: block;
+    color: gray;
+}
+
+form label.top input, label.top select {
+    -webkit-appearance: none;
+    display: block;
+    padding: .50rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 20 rem;
+    background-color: rgba(121, 118, 118, 0.1); 
+}
+form input.submitBtn {
+    border: #ed1a37;
+    background-color: #000000;
+    color: white;
+    border-radius: .75rem;
+    padding: .75rem 1.5rem;
+    margin; 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+
+}
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+
+
+main h1 {color: #ed1a37;} 
+main h2 {color: #ed1a37;}
+main h3 {color: #ffffff;}
+
+.overlay {
+    position: relative;
+    width: 50%;
+    border: black;
+}
+.overlay {width: 100%;}
+
+main figure.myphoto {
+    display: block;
+    width: 100%;
+    height: auto; 
+    margin: 0;  
+}   
+
+main figure.myphoto img {width: 100%;}
+
+.weathersummary {
+    position: absolute;
+    top: 10px; 
+    left: 10px;
+    width: 200px;
+    height:250px;
+    padding: .5rem;
+    border: solid black;
+    background: #ed1a37;
+    box-shadow: 0 0 30px #ed1a37;
+}
+
+.weathersummary:hover {
+    opacity: 0.8;
+}
+.franklin {
+   position: relative;
+     margin: 0 0 0 0;
+}
+.franklin {width: 100%;}
+
+.image2 { 
+    width: 50%;
+    margin: 0 0 0 5%;       
+    float: right;
+    padding: .5px;   
+  }
+
+.image2 img {width: 100%;}
+
+
+table {display: none;}
+
+main figcaption {
+    text-align: center;
+    font-size: .75rem;
+    padding: 1%;
+} 
+
+main figure.preston img {
+    margin: 0;
+    width: 100%;
+}
+main figure.preston img {width: 100%;}
+
+main figure.soda img {
+    margin: 0;
+    width: 100%;
+}
+main figure.soda img { width: 100%;}
+main figure.fish img {
+    margin: 0;
+    width: 100%;
+}
+main figure.fish img {width: 100%;}
+
+div.towninfo section {padding: 0 2%;}
+div.towninfo {clear: both;} 
+
+.towns img {width: 100%}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ed1a37;
+    padding: .5rem 2%;
+    text-align: center; color: #ffffff;
+    clear: both;
+}
+.time {
+    font-size: 16px;
+    float: center;  
+}
+
+
+
+
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
