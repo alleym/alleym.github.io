@@ -1,7 +1,7 @@
 
 
 const requestWeather = new XMLHttpRequest();
-requestWeather.open("Get", "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=2325e15ff5ee3861cfcf63b8235e783d", true);
+requestWeather.open("Get", "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=62a1ef011397ca3b701c6e07cdb3cb67", true);
 requestWeather.responeType = "json";
 requestWeather.send();
 
