@@ -181,8 +181,10 @@ main figure.myphoto img {width: 100%;}
 }
 
 .weatherBox {
-    border: 1px solid green ;
+    border: 1.5px solid #ed1a37 ;
     width: 20%;
+    text-align: center;
+
   }
 .franklin {width: 100%;}
 

@@ -52,7 +52,7 @@
     </ul>
   </nav>
 
-  <main class="clearfix">
+  <main class="clearfix"> 
     <h1>Preston</h1>
     <div class="overlay">
       <figure class="myphoto">
@@ -73,29 +73,13 @@
   
     <h2>5-Day Forcast</h2>
     
-    <table style="width:100%">
-      <tr>
-        <th>Monday </th>
-        <th>Tuesday</th>
-        <th>Wednesday</th>
-        <th>Tursday</th>
-        <th>Friday</th>
-      </tr>
-      <section class="prestonFive">
-      <tr>      
-        <td><span id="tableTemp"></span>&#0176</td>
-        <td> <img id="weather_icon" src="images/placeholder.png" alt="icon"> </td>
-        <td></td>
-       
-        <td><span id="img4"></span></td>
-        <td><span id="img5"></span></td>
-                   </tr>
-      </table>
-    </section>
+    <div class="weatherBox">
+      <h2>Monday</h2>           
+        <p><span id="weatherFive"></span>&#176F</p>
+        <p></p>
+      </div>     
 
-
-    <br>
-    <br>
+     
     <br>
     <div>
       <figure class="franklin">
@@ -114,28 +98,36 @@
 
 
     <figure class="image2">
-      <img src="images/tristatetornadopic.jpg" alt="tornadopic">
+      <img src="images/prestonhighschool.jpg" alt="prestonhigh">
 
-      <figcaption>Tri-State Tornado</figcaption>
+      <figcaption>Preston High School</figcaption>
     </figure>
     <br>
 
-    <p>A tornado is a dark, funnel-shaped cloud containing violently rotating air that develops in climate conditions
-      that, in the United States, are generally unique to the central and southern plains and the Gulf states. The
-      rotating winds of tornadoes can attain velocities of 300 mph, and its diameter can vary from a few feet to a mile.
-      A tornado generally travels in a northeasterly distance at speeds of 20 to 40 mph and usually covers anywhere
-      between one and more than 100 miles.</p>
-
-    <p>The worst tornado in U.S. history passes through eastern Missouri, southern Illinois, and southern Indiana,
-      killing 695 people, injuring some 13,000 people, and causing $17 million in property damage. Known as the
-      “Tri-State Tornado,” the deadly twister began its northeast track in Ellington, Missouri, but southern Illinois
-      was the hardest hit. More than 500 of the total 695 people who perished were killed in southern Illinois,
-      including 234 in Murphysboro and 127 in West Frankfort.</p>
+    <p>Preston is a city in Franklin County, Idaho, United States. The population was 5,204 at the 2010 census. The city is the county seat of Franklin County. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.</p>
     <h2>Link to Assignment week four:</h2>
     Example: <a href="assignments/websiteplan.pdf">Weather Site Plan</a>
     <br>
     <br>
-    <h1>Preston Town Events</h1>
+
+    <div>
+    <h1>Idaho Area Town Events</h1>
+    <h2><span id="sodaSprings"></span> Town Events</h2>
+    <p><span id="sEvents"></span></p>
+
+    <h2><span id="Preston"></span> Town Events</h2>
+    <p><span id="pEvents"></span></p>
+
+    <h2><span id="fishHaven"></span> Town Events</h2>
+    <p><span id="fEvents"></span></p>
+
+
+  </div>
+    
+
+    
+
+    </section>
 
   </main>
 
@@ -148,12 +140,11 @@
 
 
   <script src="javascript/currentdate.js"></script>
-
   <script src="javascript/hamburger.js"></script>
-
   <script src="javascript/weatherAppcode.js"></script>
   <srcipt src="javascript/WindChill.js"></sript>
   <script src="javascript/preston5day.js"></script>
+  <script src="javascript/townevents.js"></script>
 
 
 

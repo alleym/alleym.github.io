@@ -10,5 +10,8 @@ requestWeather.onload = function () {
    console.log(weatherData);
 
    document.getElementById('weatherFive').innerHTML = weatherData.list[0].main.temp;
-   
+ 
+ 
+
+
 }

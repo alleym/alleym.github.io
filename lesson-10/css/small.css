@@ -179,6 +179,13 @@ main figure.myphoto img {width: 100%;}
    position: relative;
      margin: 0 0 0 0;
 }
+
+.weatherBox {
+    border: 1.5px solid #ed1a37 ;
+    width: 20%;
+    text-align: center;
+
+  }
 .franklin {width: 100%;}
 
 .image2 { 
@@ -188,14 +195,9 @@ main figure.myphoto img {width: 100%;}
     padding: .5px;   
   }
 
-
 .image2 img {width: 100%;}
 
-.weatherBox {
-        border: 1px solid green ;
-      }
-}
-    
+
 table {display: none;}
 
 main figcaption {
