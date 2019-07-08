@@ -1,7 +1,7 @@
 let section = document.querySelector('weathersummary');
 
 let weatherRequest = new XMLHttpRequest();
-weatherRequest.open("Get", "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=2993fd28d6743adbbe3af79713207ef5", true);
+weatherRequest.open("Get", "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=8e4aa90363cceb5b591fbb99055e4d17", true);
 weatherRequest.responeType = "json";
 weatherRequest.send();
 
