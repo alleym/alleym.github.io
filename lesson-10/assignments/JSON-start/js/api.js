@@ -21,7 +21,7 @@ myRequestObject.onload = function() {
 function assembleData(weatherinfo) {
 	console.log(weatherinfo);
 
-var towns= weatherinfo['towns'];
+var Five= weatherinfo['Five'];
  
 for (var i=0;i<towns.length;i++) {
 

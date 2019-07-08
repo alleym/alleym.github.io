@@ -266,11 +266,15 @@ footer {
     float: right;
     text-align: left;
 }
+.michelle {
+    align-self: flex-end;
+}
 
 .time {
     font-size: 16px;
     float: center;  
 }
+
 
 
 

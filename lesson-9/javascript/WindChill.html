@@ -1,17 +1,18 @@
 
 
      <script>
+         var article = document.querySelector('windChill');
 
       function doInputOutput() {
 
 
         // Input two values from the users; The outside temp in Faherenheit and the Windspeed.
-        var tempf = parseInt(document.getElementById("WindChill").innerHTML);
-        var speed = parseInt(document.getElementById("Wind").value).innerHTML;
+        var tempf = parseInt(document.getElementById("maxTemp").innerHTML);
+        var speed = parseInt(document.getElementById("windSpeed").value).innerHTML;
         var W = windChill(tempF, speed);
 
         //output for  the windchill function
-            document.getElementById("windDiv").innerHTML = W + " Faherenheit"; 
+            document.getElementById("windC").innerHTML = W + " Faherenheit"; 
         }
 
         //calculate the windchill using the windchill factor below and round to nearest 100
