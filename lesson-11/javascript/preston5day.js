@@ -1,3 +1,5 @@
+
+
 const requestWeather = new XMLHttpRequest();
 requestWeather.open("Get", "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=5e326ad81821015729beb090b44212b5", true);
 requestWeather.responeType = "json";
@@ -6,23 +8,7 @@ requestWeather.send();
 requestWeather.onload = function () {
    let weatherData = JSON.parse(requestWeather.responseText);
    console.log(weatherData);
-   assembleData(weatherData);
-}
 
-   function assembleData(weatherinfo) {
-    console.log(weatherinfo);
-    
-    var iconcode = weatherData.list[i].weather[0].icon;
-            var weather_icon = "//openweathermap.org/img/w/" + iconcode + ".png";
-            var theIcon = document.createElement("images/placeholder.png");
-            theIcon.src = weather_icon;
-
-
-
-
-   
-
+   document.getElementById('weatherFive').innerHTML = weatherData.list[0].main.temp;
    
 }
-
-	

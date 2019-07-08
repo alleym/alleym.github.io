@@ -7,7 +7,7 @@ requestWeather.onload = function () {
    let weatherData = JSON.parse(requestWeather.responseText);
    console.log(weatherData);
    
-document.getElementById("tableTemp").innerHTML = weatherData.list.main[1].temp;
+
 
    
 }

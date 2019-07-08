@@ -179,6 +179,11 @@ main figure.myphoto img {width: 100%;}
    position: relative;
      margin: 0 0 0 0;
 }
+
+.weatherBox {
+    border: 1px solid green ;
+    width: 20%;
+  }
 .franklin {width: 100%;}
 
 .image2 { 
