@@ -15,10 +15,7 @@ requestWeather.onload = function () {
    document.getElementById('weatherFive3').innerHTML = weatherData.list[3].main.temp;
    document.getElementById('weatherFive4').innerHTML = weatherData.list[4].main.temp;
 
-   const iconcode = weatherData.list[0].weather[0].icon;
-   console.log(iconcode);
-   const icon_path = "http://openweathermap.org/img/w" + iconcode +".png";
-   document.getElementById('weather_icon').src = icon_path;
+ 
  
  
 
