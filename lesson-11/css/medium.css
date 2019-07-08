@@ -39,12 +39,10 @@ nav ul.hide {display: block}
 
 
 
+
+
+
 /*----------- MAIN --------------*/
-div.weatherGallery figure {
-    flex-basis: 46%;    
-}
-
-
 .image2 {
     width: 50%;
     margin: 0 0 0 2%;
@@ -52,6 +50,7 @@ div.weatherGallery figure {
 }
 .image2 img {width: 100%}
 
+/*Table*/
 table {display: table;}
 th, td {
     text-align: left;
@@ -65,12 +64,20 @@ th, td {
     color: white;
   }
 
-  .towns {
+  
+  
+/*javascript*/
+.towns {
       display: flex;
       justify-content: space-between;
   }
 .towns aside {
     width: 30%;
+}
+
+/*weatherGallery Page*/
+div.weatherGallery figure {
+    flex-basis: 46%;    
 }
 
  

@@ -184,13 +184,15 @@ main figure.stormheader img {width: 100%;}
 
 /*gallery page*/
 
-div.weatherGallery {
+div.weatherGallery  {
     display: flex;
     flex-wrap: wrap;
-    margin: 1rem 2%;
    }
 
-div.weatherGallery figure {flex-basis: 96%;}
+div.weatherGallery figure {
+    flex-basis: 96%;
+    margin: 1rem 2%;
+}
 div.weatherGallery figure img {flex-basis: 100%;}
 
 /*Storm Center*/

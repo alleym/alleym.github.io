@@ -31,7 +31,7 @@ nav ul.hide {display: block}
 /*----------- MAIN {gallery page} --------------*/
 
 div.weatherGallery figure {
-    flex-basis: 29%;    
+    flex-basis: 28%;    
 }
 div.weatherGallery figure img:hover {box-shadow: 0 0 50px #333;}
 

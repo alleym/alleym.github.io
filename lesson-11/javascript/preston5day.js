@@ -7,9 +7,18 @@ requestWeather.send();
 
 requestWeather.onload = function () {
    let weatherData = JSON.parse(requestWeather.responseText);
-   console.log(weatherData);
+ 
 
    document.getElementById('weatherFive').innerHTML = weatherData.list[0].main.temp;
+   document.getElementById('weatherFive1').innerHTML = weatherData.list[1].main.temp;
+   document.getElementById('weatherFive2').innerHTML = weatherData.list[2].main.temp;
+   document.getElementById('weatherFive3').innerHTML = weatherData.list[3].main.temp;
+   document.getElementById('weatherFive4').innerHTML = weatherData.list[4].main.temp;
+
+   const iconcode = weatherData.list.weather[0].icon;
+   console.log(iconcode);
+   const icon_path = "http://openweathermap.org/img/w" + iconcode +".png";
+   document.getElementById('weather_icon').src = icon_path;
  
  
 
