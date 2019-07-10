@@ -1,0 +1,96 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+    
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+  }
+
+
+/*----------- BODY --------------*/
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin:auto;
+    }
+
+
+
+/*----------- HEADER --------------*/
+
+    header img {width: auto;}
+    header h1 {font-size: 2rem; margin-top: 1rem;}
+    header h1 {font-size: 1.5rem;}
+  
+
+/*----------- NAVIGATION --------------*/
+nav button (display: none;)
+nav ul.hide {display: block}
+nav ul li {float: left;}
+nav ul {margin-left: 2%;}
+
+
+nav ul li a{
+    border: none;
+    padding: .8rem 1rem;}
+nav ul.hide {display: block}
+.toggle {display: none;}
+
+
+
+
+
+
+/*----------- MAIN --------------*/
+.image2 {
+    width: 50%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+.image2 img {width: 100%}
+
+/*Table*/
+table {
+    display: table;
+    border: solid black;
+    box-shadow: 1rem;}
+th, td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  tr:nth-child(odd){background-color: #f2f2f2}
+  
+  th {
+    background-color: #ed1a37;
+    color: white;
+  }
+
+  
+  
+/*javascript*/
+.towns {
+      display: flex;
+      justify-content: space-between;
+  }
+.towns aside {
+    width: 30%;
+}
+
+/*weatherGallery Page*/
+div.weatherGallery figure {
+    flex-basis: 46%;    
+}
+
+ 
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ed1a37;
+    padding: .5rem 2%;
+    text-align: center; color: #ffffff;
+    clear: both;}
+
+}
+    /* end of media query */

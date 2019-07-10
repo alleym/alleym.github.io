@@ -9,7 +9,7 @@ requestWeather.onload = function () {
    let weatherData = JSON.parse(requestWeather.responseText);
    console.log(weatherData);
 
-      document.getElementById('weatherFive').innerHTML = weatherData.list[0].main.temp;
+   document.getElementById('weatherFive').innerHTML = weatherData.list[0].main.temp;
    document.getElementById('weatherFive1').innerHTML = weatherData.list[1].main.temp;
    document.getElementById('weatherFive2').innerHTML = weatherData.list[2].main.temp;
    document.getElementById('weatherFive3').innerHTML = weatherData.list[3].main.temp;
