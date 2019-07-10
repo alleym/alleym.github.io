@@ -1,0 +1,43 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+nav, header, footer, main {max-width: 75rem; margin: auto;}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+ 
+nav ul {padding-left: 2%;}
+nav li {width: auto;}
+nav a {padding: .5rem 1rem;}
+ 
+    
+
+
+/*----------- MAIN --------------*/
+
+
+    main figure {width: 31%}
+   
+
+    div.news {column-count: 3;}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #272147;
+    padding: .1rem 2%;
+    text-align: center; color: white;
+
+
+
+
+
+
+
+} /*end of media query */
