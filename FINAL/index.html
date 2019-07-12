@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="Michelle ALley" content="Temple">
 <title>Background: Temple Site</title>
-
+<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Roboto+Condensed:400,400i,700&display=swap" rel="stylesheet"> 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!--STYLE SHEETS-->
@@ -19,27 +19,37 @@
 
 <body>
 <header>
-  <h1>Temple Site</h1>
+  <h2>Temple Site</h2>
   <h2>Oklahoma City Temple</h2>
 </header>
 
 <nav class="clearfix">  
+        <nav class="clearfix">
+                <div class="toggle">
+                  <button onclick="toggleMenu()">&#9776;</button>
+                </div>
 <ul>
-  <li><a href="FINAL/index.html">HOME</a></li>
+  <li class="active"><a href="FINAL/index.html">HOME</a></li>
   <li><a href="FINAL/reservations">RESERVATIONS</a></li>
-  <li class="active"><a href="FINAL/locations">LOCATIONS</a></li>
+  <li><a href="FINAL/locations">LOCATIONS</a></li>
   <li><a href="FINAL/services.html">SERVICES</a></li>
-  <li><a href="FINAL/aboutus.html">ABOUT US</a></li>
+  <li><a href="FINAL/aboutus.html">HISTORY</a></li>
+  <li><a href="FINAL/contactus.html">CONTACT US</a></li>
+
 
 </ul>
 </nav>
 
 <main class="clearfix"> 
+        <div class="overlay">
+            <section class="overtext">
+            <h1>Reserve your room today...</h1>
+        </section>  
+    <figure class="pano">
+        <img src="images/washingtondc.jpg" alt="panoramic temple">
+        </figure>
 
-    <figure class="rome">
-        <img src="images/rome1.jpg" alt="rometemple">
-        <figcaption>Rome Ital Temple</figcaption>
-    </figure>
+    </div>
     
     <h1>Background</h1>
 

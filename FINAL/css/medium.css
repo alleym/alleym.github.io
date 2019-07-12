@@ -13,20 +13,23 @@ header h1 {font-size: 1.5rem;}
 
 /*----------- NAVIGATION --------------*/
 
-nav li {float: left; width: 20%}
+nav button (display: none;)
+nav ul.hide {display: block}
+nav ul li {float: left;}
+nav ul {margin-left: 2%;}
 
+
+nav ul li a{
+    border: none;
+    padding: .8rem 1rem;}
+nav ul.hide {display: block}
+.toggle {display: none;}
 
 /*----------- MAIN --------------*/
 
-main figure {
-    float: right;
-    width: 48%;
-    margin-left: 2%;
-    padding-bottom: .5rem;
-}
+
 
 div.news {
-
 clear: both;
 column-count: 2;
 column-rule: 1px solid #ddd;

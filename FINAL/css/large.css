@@ -13,9 +13,18 @@ nav, header, footer, main {max-width: 75rem; margin: auto;}
 
 /*----------- NAVIGATION --------------*/
  
-nav ul {padding-left: 2%;}
-nav li {width: auto;}
-nav a {padding: .5rem 1rem;}
+nav button (display: none;)
+nav ul.hide {display: block}
+nav ul li {float: left;}
+nav ul {margin-left: 2%;}
+
+
+nav ul li a{
+    border: none;
+    padding: .8rem 1rem;}
+nav ul.hide {display: block}
+.toggle {display: none;}
+
  
     
 

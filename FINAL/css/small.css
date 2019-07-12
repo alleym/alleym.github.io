@@ -6,26 +6,26 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 
 /*----------- BODY --------------*/
-body {
+body {color: 
     font-size: 16px;
-    font-family: Verdana, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 
 /*----------- HEADER --------------*/
 header {
     padding: .5rem 2%;
-    background-color: #141159;
+    background-color: #2e9cca;
+    height: 200px;
 }
-header img{float: left; margin-right: 10px;width: 50px;}
-header h1 {margin: 0; font-size: 1.3rem;color: #ffffff}
-header h2 {margin: 0; font-weight: normal; font-size: 1rem; color: #ffffff; }
+header h1 {margin: 0; font-weight: bold; font-size: 2rem; color: #ffffff; }
+header h2 {margin: 0; font-weight: bold; font-size: 1rem; color: #222543; }
 
 /*----------- NAVIGATION --------------*/
 nav {
-    background-color: #000000;
+    background-color: #ffffff;
 }
-nav ul {
+nav ul {s
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -35,19 +35,21 @@ nav li {list-style-type: none;}
 nav a {
    
     display: block;
-    color: #eee;
+    color: #222543;
     padding: .8rem 0;
     text-decoration: none;
     text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 nav ul li a:hover {
-    background-color: #aaa;
-    color: #333;
+    background-color: #a8aab7;
+    color: #2e9cca;
 }
 nav li.active {
-    background-color: #6f6869;
-    color: #fff;
+    background-color: #a8aab7;
+    color: #2a658a;
 }
 /*----------- MAIN --------------*/
 
@@ -57,18 +59,34 @@ main {
     min-height: 10rem;
 }
 
-main h1 {color: #141159;} 
 
-  
-.rome figure {
+main figure.pano { 
+    display: block;
     width: 100%;
-    margin: 0;
+    height: auto; 
+    margin: 0;  
+}   
+main figure.pano img {width: 100%;}  
+
+/*overlay and text*/
+
+.overlay h1 {
+    font-family: 'Great Vibes', cursive;
+    margin: 0; 
+    font-size: 4rem; 
+    text-shadow: 1px 1px #141159;
+    color: #ffffff
 }
-.rome figure img {width: 100%;} 
-
-main figcaption {text-align: center;font-size: .8rem; padding: 1%} 
-
-
+.overlay {
+    position: relative;
+    width: 50%;
+}
+.overlay {width: 100%;}
+.overtext {
+    top: 260px; 
+    left: 550px;
+    position: absolute;
+    }
 
 
 /*----------- FOOTER --------------*/
