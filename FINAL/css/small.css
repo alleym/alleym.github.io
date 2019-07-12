@@ -16,8 +16,9 @@ body {color:
 header {
     padding: .5rem 2%;
     background-color: #2e9cca;
-    height: 200px;
+    height: 220px;
 }
+
 header h1 {margin: 0; font-weight: bold; font-size: 2rem; color: #ffffff; }
 header h2 {margin: 0; font-weight: bold; font-size: 1rem; color: #222543; }
 
