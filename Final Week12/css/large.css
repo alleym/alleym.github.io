@@ -33,7 +33,7 @@ nav ul.hide {display: block}
 div.weatherGallery figure {
     flex-basis: 28%;    
 }
-div.weatherGallery figure img:hover {box-shadow: 0 0 50px #333;}
+div.weatherGallery figure img:hover {box-shadow: 0 0 30px #2e9cca;}
 
 /* Storm Center Page*/
 
@@ -55,11 +55,5 @@ div.towninfo section:nth-child(3) {width: 33%; }
 main figure.preston img {width: 100%;}
 
 /*----------- FOOTER --------------*/
-footer {
-    background-color: #ed1a37;
-    padding: .5rem 2%;
-    text-align: center; color: #ffffff;
-    clear: both;}
-
     
 }/* end of media query */

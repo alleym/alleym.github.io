@@ -1,0 +1,79 @@
+{
+    "temples" : [
+    {
+      "name": "Washington D.C. Temple",
+      "address": [
+        "9900 Stoneybrook Dr",
+        "Kensington MD 20895-3199",
+        "United States"],        
+      "telephone": "301-588-0650",
+      "email": "templeinn@temple.com",
+      "history": [
+          "The Washington D.C. Temple is the 16th operation",
+          "temple and first to be built on the east coast.",
+          "It was completed in 1974."],
+      "ordinance": "none at this time",
+      "session": "none at this time",
+          
+    },
+
+       {   
+        "name": "Oakland Temple",
+        "address": [
+          "4770 Lincoln Ave",
+          "Oakland CA 94602-2535 ",
+          "United States"],        
+        "telephone": "510-531-3200",
+        "email": "templeinn@temple.com",
+        "history": [
+            "The Oakland Temple was the 13th temple and one",
+            "of seven standing temples in California. It was",
+            "recently rededicated after an extensive renovation."],
+        "ordinance": "baptism, initiatory, endowment, sealing",
+        "session": [
+            "5:30a.m., then 6:00a.m",
+            "every hour on hour",
+            "last session 8:00p.m."]
+   
+    },
+    {
+        "name": "Salt Lake Temple",
+        "address": [
+          "50 W North Temple St",
+          "Salt Lake City UT 84150-9709",
+          "United States"],        
+        "telephone": "801-240-2640",
+        "email": "templeinn@temple.com",
+        "history": [
+            "The history of the building of Salt Lake Temple",
+            "spanned four decades from 1853 to 1893 and through",
+            "the work and dedication of the church living in the area",
+            "The temple will be closing for renovation in December 2019",
+        ],
+        "ordinance": "baptism, initiatory, endowment, sealing",
+        "session": [
+            "5:30a.m., then 6:00a.m",
+            "every hour on hour",
+            "last session 8:00p.m."],
+      
+    },
+         {   
+            "name": "Portland Oregon Temple",
+            "address": [
+              "3600 Kruse Oaks Blvd",
+              "Lake Oswego OR 97035-8602"
+              "United States"],
+            "telephone": "503-639-7066",
+            "email": "templeinn@temple.com",
+            "history": [
+                "The Portland Oregon Temple was finished in 1989",
+                "and was the first built in Oregon. It towers among",
+                "tall Doughlas Firs with it's six marble spires."],
+            "ordinance": "baptism, initiatory, endowment, sealing",
+            "session": "closed for cleaning until July 15",
+    },
+   
+      ]
+    }
+   ]
+  }

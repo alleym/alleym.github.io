@@ -26,11 +26,23 @@ nav ul.hide {display: block}
 .toggle {display: none;}
 
  
-    
 
 
 /*----------- MAIN --------------*/
 
+/*---home page---*/
+.girl {
+    width: 33%;
+    margin: 0 0 0 2%;
+    border: 1px solid red;
+    float: right;
+}
+.girl img {width: 100%;}
+
+div.homegallery figure {
+    flex-basis: 28%;    
+}
+div.homegallery figure img:hover {box-shadow: 0 0 30px #2e9cca;}
 
     main figure {width: 31%}
    

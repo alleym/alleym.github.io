@@ -27,7 +27,11 @@ nav ul.hide {display: block}
 
 /*----------- MAIN --------------*/
 
+/*---homepage---*/
 
+div.homegallery figure {
+    flex-basis: 46%;    
+}
 
 div.google {
 clear: both;
