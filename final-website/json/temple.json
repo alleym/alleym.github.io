@@ -1,7 +1,8 @@
 {
-  
-   "dc" : [ 
-    { 
+
+   "towns" : {
+   "dc": {
+    
       "name": "Washington D.C. Temple",
       "address": [
         "9900 Stoneybrook Dr",
@@ -18,7 +19,7 @@
           
     },
 
-    { "oakland" : [ 
+     "oakland" : [ 
       { 
         "name": "Oakland Temple",
         "address": [

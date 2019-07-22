@@ -4,7 +4,7 @@ var section = document.querySelector('theFour');
 var myRequestObject = new XMLHttpRequest();
 
 //enter the path to the local json file
-var requestFile = "javascript/temple.json";
+var requestFile = "json/temple.json";
 
 //create an object
 let theFourtemples;
