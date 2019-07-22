@@ -4,7 +4,7 @@ var section = document.querySelector('theFour');
 var myRequestObject = new XMLHttpRequest();
 
 //enter the path to the local json file
-var requestFile = "javascript/templejs.json";
+var requestFile = "javascript/temple.json";
 
 //create an object
 let theFourtemples;
@@ -21,11 +21,11 @@ myRequestObject.onload = function() {
 function assembleData(templeinfo) {
 	console.log(templeinfo);
 
-var towns= weatherinfo['towns'];
+var temples= templeinfo['temples'];
  
-for (var i=0;i<towns.length;i++) {
+for (var i=0;i<temples.length;i++) {
 
-	if (towns[i].name=="Preston"||towns[i].name=="Fish Haven"||towns[i].name=="Soda Springs") {
+	if (temples[i].name=="dc"||temples[i].name=="oakland"||temples[i].name=="slc"temples[i].name=="portland") {
 
 	
 	var myAside = document.createElement('aside');
@@ -33,32 +33,43 @@ for (var i=0;i<towns.length;i++) {
     var myPara1 = document.createElement('p');
     var myPara2 = document.createElement('p');
     var myPara3 = document.createElement('p');
+	var myPara4 = document.createElement('p');
 	
 	var myImage = document.createElement('img');
 
-	myH2.textContent = towns[i].name+' '+towns[i].yearFounded;
-    myPara1.textContent = 'Motto: ' +towns[i].motto;
-    myPara2.textContent = 'Current Population: ' +towns[i].currentPopulation;
-	myPara3.textContent = 'Rainfall:' +towns[i].averageRainfall;
+	myH2.textContent = temples[i].name;
+    myPara1.textContent = 'Address: ' +temples[i].address;
+    myPara2.textContent = 'Tel: ' +temples[i].telephone;
+	myPara3.textContent = 'Email:' +temples[i].email;
+	myPara4.textContent = 'Ordinances:' +temples[i].ordinance;
+	myPara5.textContent = 'Sessions:' +temples[i].session;
 
-	if (towns[i].name=="Preston") {
-		myImage.setAttribute('src', 'images/preston.jpg');
-		myImage.setAttribute('alt', 'Preston');
+
+
+	if (temples[i].name=="dc") {
+		myImage.setAttribute('src', 'images/okc.jpg');
+		myImage.setAttribute('alt', 'dc');
 	}
-	else if (towns[i].name=="Fish Haven") {
-		myImage.setAttribute('src', 'images/fishhaven.jpg');
-		myImage.setAttribute('alt', 'fish');
+   else if (temples[i].name=="oakland") {
+		myImage.setAttribute('src', 'images/okc.jpg');
+		myImage.setAttribute('alt', 'oakland');
 	}
-	else if (towns[i].name=="Soda Springs") {
-		myImage.setAttribute('src', 'images/sodasprings.jpg');
-		myImage.setAttribute('alt', 'soda');
+	else if (temples[i].name=="slc") {
+		myImage.setAttribute('src', 'images/okc.jpg');
+		myImage.setAttribute('alt', 'slc');
+	}	
+	
+	else if (temples[i].name=="portland") {
+		myImage.setAttribute('src', 'images/okc.jpg');
+		myImage.setAttribute('alt', 'portland');
 	}
 	myAside.appendChild(myImage);
 	myAside.appendChild(myH2);
 	myAside.appendChild(myPara1);
 	myAside.appendChild(myPara2);
 	myAside.appendChild(myPara3);
-	
+	myAside.appendChild(myPara4);
+	myAside.appendChild(myPara5);
 
 	article.appendChild(myAside);
 }

@@ -31,13 +31,10 @@ nav ul.hide {display: block}
 /*----------- MAIN --------------*/
 
 /*---home page---*/
-.girl {
+.girlone {width: 33%;}
+.coupleone {
     width: 33%;
-    margin: 0 0 0 2%;
-    border: 1px solid red;
-    float: right;
-}
-.girl img {width: 100%;}
+    margin: 0 0 0 2;}
 
 div.homegallery figure {
     flex-basis: 28%;    

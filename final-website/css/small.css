@@ -81,21 +81,23 @@ div.homegallery figure {
 }
 div.homegallery figure img {flex-basis: 100%;}
 
-main figure.girl img {
-    width: 100%;
+.girlone  {
+    width: 50%;
     float: right;
-    padding: 0 0 2%;
-    margin: 1px;  }
-main figure.gir img {
-    width: 100%}
+    padding-left: 2rem;
+}
 
-main figure.wedcouple img {
-    width: 100%;
-    float: right;
-    padding: 0 0 2%;
-    border: 4px red dashed;}
+.girlone img {width: 100%}
 
-    main figure.wedcouple img {width: 100%;}
+.coupleone {
+    width: 50%;
+    float: left;
+    padding-right: 2rem;
+    margin: 0;
+    
+}
+.coupleone img {width: 100%;}
+
 .overlay {
     position: relative;
     width: 50%   

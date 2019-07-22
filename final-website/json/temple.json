@@ -1,6 +1,7 @@
 {
-    "temples" : [
-    {
+  
+   "dc" : [ 
+    { 
       "name": "Washington D.C. Temple",
       "address": [
         "9900 Stoneybrook Dr",
@@ -17,7 +18,8 @@
           
     },
 
-       {   
+    { "oakland" : [ 
+      { 
         "name": "Oakland Temple",
         "address": [
           "4770 Lincoln Ave",
@@ -36,7 +38,8 @@
             "last session 8:00p.m."]
    
     },
-    {
+    { "slc" : [ 
+      { 
         "name": "Salt Lake Temple",
         "address": [
           "50 W North Temple St",
@@ -57,7 +60,8 @@
             "last session 8:00p.m."],
       
     },
-         {   
+    { "portland" : [ 
+      {   
             "name": "Portland Oregon Temple",
             "address": [
               "3600 Kruse Oaks Blvd",
