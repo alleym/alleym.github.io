@@ -1,6 +1,6 @@
 {
 
-   "towns" : {
+   "temples" : {
    "dc": {
     
       "name": "Washington D.C. Temple",
@@ -19,7 +19,7 @@
           
     },
 
-     "oakland" : [ 
+     "oakland" : 
       { 
         "name": "Oakland Temple",
         "address": [
@@ -39,7 +39,7 @@
             "last session 8:00p.m."]
    
     },
-    { "slc" : [ 
+    "slc" : 
       { 
         "name": "Salt Lake Temple",
         "address": [
@@ -61,7 +61,7 @@
             "last session 8:00p.m."],
       
     },
-    { "portland" : [ 
+       "portland" : 
       {   
             "name": "Portland Oregon Temple",
             "address": [
@@ -76,9 +76,8 @@
                 "tall Doughlas Firs with it's six marble spires."],
             "ordinance": "baptism, initiatory, endowment, sealing",
             "session": "closed for cleaning until July 15",
-    },
+    }  
    
-      ]
     }
-   ]
+
   }
