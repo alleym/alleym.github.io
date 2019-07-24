@@ -41,16 +41,12 @@ div.homegallery figure {
 }
 div.homegallery figure img:hover {box-shadow: 0 0 30px #2e9cca;}
 
-    main figure {width: 31%}
+main figure {width: 31%}
    
 
-    div.google {column-count: 2;}
+div.google {column-count: 2;}
 
 /*----------- FOOTER --------------*/
-footer {
-    background-color: #272147;
-    padding: .1rem 2%;
-    text-align: center; color: white;
 
 
 

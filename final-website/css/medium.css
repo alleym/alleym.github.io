@@ -27,11 +27,52 @@ nav ul.hide {display: block}
 
 /*----------- MAIN --------------*/
 
+
+
 /*---homepage---*/
+main figure.pano { 
+    display: block;
+    width: 100%;
+    height: auto; 
+    margin: 0;  
+}   
+main figure.pano img {width: 100%;} 
 
 div.homegallery figure {
     flex-basis: 46%;    
 }
+/*--services page --*/
+.nonavbar {
+    color: #2e9cca;
+    padding: 1%;
+    margin: 0;
+    width: 100%
+}
+.nonavbar2 {
+    color: #2e9cca;
+    padding: 1%;
+    margin: 0;
+    width: 100%
+}
+.catering {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding-right: 2rem;
+}
+.catering img {width: 100%;}
+main figcaption {
+    text-align: center;
+    font-size: .75rem;
+    padding: 1%;
+} 
+.pool {
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding-right: 2rem;
+}
+.pool img {width: 100%;}
 
 
 
@@ -42,10 +83,28 @@ column-rule: 1px solid #aaa;
 }
 
 /*----------- FOOTER --------------*/
+
 footer {
-background-color: #272147;
-padding: .1rem 4%;
-text-align: center; color: white;
-    
+    background-color: #a8aab7;
+    text-align: center; 
+    color: #ffffff;
+    clear: both;
+    height: 350px;
+    width: 100%;
+}
+.address1 {
+    float: left;
+    text-align: left;
+    padding: 1rem;
+    margin: 1px;
+}
+.address2 {
+    float: right;
+    text-align: left;
+    padding: 1rem;
+    margin: 1px;
+
+}
+   
     
     } /*end of media query */
