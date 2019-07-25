@@ -6,9 +6,16 @@
 
 
 /*----------- HEADER --------------*/
-header img{width: auto;}
-header h1 {font-size: 2rem;}
+header h1 {font-size: 2rem;}s
 header h1 {font-size: 1.5rem;}
+
+/*--header logo--*/
+.logotemple {
+    float: left;
+    width: 50%;
+    margin: 0;
+}
+.logotemple img {wdith: 100%}
 
 
 /*----------- NAVIGATION --------------*/
@@ -41,6 +48,7 @@ main figure.pano img {width: 100%;}
 div.homegallery figure {
     flex-basis: 46%;    
 }
+
 /*--services page --*/
 .nonavbar {
     color: #2e9cca;

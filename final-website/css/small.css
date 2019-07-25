@@ -16,10 +16,16 @@ body {
 
 /*----------- HEADER --------------*/
 header {
+    background-color: #2e9cca;
     padding: .5rem 2%;
-    background-color: #ffffff;
-    height: 220px;
+    height: 250px;
+    width: 100%;
 }
+.logotemple {
+    float: center;
+    wdith: 50%;
+}
+.logotemple img {wdith: 100%;}
 
 header h1 {margin: 0; font-weight: bold; font-size: 2rem; color: #ffffff; }
 header h2 {margin: 0; font-weight: bold; font-size: 1rem; color: #222543; }
@@ -27,11 +33,13 @@ header h2 {margin: 0; font-weight: bold; font-size: 1rem; color: #222543; }
 /*----------- NAVIGATION --------------*/
 
 nav ul {
-    background-color: #2e9cca;
+    background-color: #a8aab7;
     list-style-type: none;
     padding: 0;
     margin: 0;
     overflow: hidden;
+    position: block;
+
 }
 nav li {list-style-type: none;}
 
@@ -45,7 +53,7 @@ nav a {
 }
 
 nav ul li a:hover {
-    background-color: #a8aab7;
+    background-color: #2a658a;
     color: #ffffff;
 }
 nav li.active {
@@ -98,24 +106,7 @@ div.homegallery figure img {flex-basis: 100%;}
 }
 .coupleone img {width: 100%;}
 
-.overlay {
-    position: relative;
-    width: 50%   
-}
-.overlay {
-    width: 100%;
-}
-.overtext {
-    top: 250px; 
-    left: 700px;
-    position: absolute;
-    font-family: 'Great Vibes', cursive;
-    margin: 0; 
-    font-size: 1.5rem; 
-    text-shadow: 1px 1px #141159;
-    color: #ffffff  
-    }
-
+ 
     /*contact us page*/
 
     .map {
@@ -183,7 +174,24 @@ div.homegallery figure img {flex-basis: 100%;}
         border-left: #2e9cca solid 6px;
     }
 
-/*--services page--*/
+/*--locations page--*/
+figure.oaklandimg img {
+    float: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+
+}
+figure.oaklandimg img {width: 100%}
+
+figure.portlandtemple {
+    float: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+}
+
+    /*--services page--*/
 
 .nonavbar {
     color: #2e9cca;
@@ -193,7 +201,7 @@ div.homegallery figure img {flex-basis: 100%;}
 }
 .nonavbar2 {
     color: #2e9cca;
-    padding: 1%;
+    padding-right: 1rem;
     margin: 0;
     width: 100%
 }

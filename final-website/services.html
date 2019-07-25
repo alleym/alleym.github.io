@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="Michelle ALley" content="Temple">
 <title>Background: Temple Site</title>
-<link href="https://fonts.googleapis.com/css?family=Great+Vibes|Roboto+Condensed:400,400i,700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,700&display=swap" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <!--STYLE SHEETS-->
@@ -17,12 +17,13 @@
 
 </head>
 
-
-<header>
-  <h2>Temple Site</h2>
-  <h2>Oklahoma City Temple</h2>
-</header>
 <body>
+    <header>
+    <figure class="logo">
+      <img src="images/logotemple.png" alt="header logo">
+    </figure>
+  </header>
+  
 
 <nav class="clearfix">  
                 <div class="toggle">
@@ -33,7 +34,6 @@
   <li><a href="reservations.html">RESERVATIONS</a></li>
   <li><a href="temple.html">LOCATIONS</a></li>
   <li class="active"><a href="services.html">SERVICES</a></li>
-  <li><a href="aboutus.html">HISTORY</a></li>
   <li><a href="contactus.html">CONTACT US</a></li>
 
 
@@ -86,11 +86,11 @@
 <br>
 <div class="servepics">
 <figure class="hallservicepage">
-    <a href="services.html"></a><img src="images/reception.jpg" alt="hallphoto">
+    <a href="reservations.html"><img src="images/reception.jpg" alt="reception"></a>
     <figcaption>Wedding Reption Planner</figcaption>
   </figure>
   <figure class="missionpage">
-      <a href="missionpage.html"></a><img src="images/missionary.jpg" alt="mission stay link">
+      <a href="missionpage.html"><img src="images/missionary.jpg" alt="missionary"></a>
       <figcaption>Long-term Missionary Stays</figcaption>
     </figure>
   </div>
@@ -106,12 +106,12 @@
             <label class="top">Email<input type="email" name="stormcenter@gmail.com" required></label>
             <label class="top">ZipCode*<input type="text" name="zipcode" placeholder="73031" required></label>
             <label class="top">Date<input type="date" name="todaysdate"></label>
-        </select>
 </fieldset>
 <fieldset>
     <legend>SERVICES FORM</legend>
         <label class="top">Please tell us how we can help<input type="text" name="accomodate" placeholder="need cot, will arrive late e.g."></label>
 </fieldset>
+</form>
 <input type="submit" value="Reservation Request" class="submitBtn">
 <br>
 <br>    
