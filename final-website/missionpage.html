@@ -19,9 +19,10 @@
 
 <body>
 <header>
-  <h2>Temple Site</h2>
-  <h2>Oklahoma City Temple</h2>
-</header>
+    <figure class="logo">
+        <img src="images/logotemple.png" alt="header logo">
+      </figure>
+    </header>
 
 <nav class="clearfix">
     <div class="toggle">
@@ -33,6 +34,8 @@
   <li><a href="reservations.html">RESERVATIONS</a></li>
   <li><a href="temple.html">LOCATIONS</a></li>
   <li><a href="services.html">SERVICES</a></li>
+  <li><a href="weddingpage.html">WEDDINGS</a></li>
+  <li><a href="missionpage.html">LONG-TERM STAYS</a></li>
   <li><a href="contactus.html">CONTACT US</a></li>
 
 
@@ -40,30 +43,47 @@
 </nav>
 
 <main class="clearfix"> 
-    <figure class="missionary">
-        <img src="images/templemissionary.jpg" alt="temple mission couple">
-        </figure>
-<br>
-<br>
-<br>
-    </div>
 
-   
+<h1>Long-term Stay Options  </h1>
+    <figure class="hotelone">
+        <img src="images/hotel1.jpg" alt="double bed room">
+        <figcaption>Spacious rooms.</figcaption>
+        </figure>  
 
-    <p>Temple Inn & Suites offers fhtull-time and part-time temple missionaries a place to call home. We offer long-term stays that include a small kitchenette and kitchen supplies. We offer
+    <p>Temple Inn & Suites offers full-time and part-time temple missionaries a place to call home. We offer long-term stays that include a small kitchenette and kitchen supplies. We offer
         breakfast on weekends for our missionaries staying with us and free complimentary Sunday dinner! THere are three options for you:
     </p>
      
 <br>
 <br>
-<figure class="hotel1">
-    <img src="images/couple1.jpg" alt="coupleone">
-  </figure>
+<figure class="desk">
+    <img src="images/desk.jpg" alt="hotel room desk">
+    <figcaption>Office Space.</figcaption>
 
-    <h1>Celebrate</h1>
-      <p>We are family hospitality-centered and take great care in setting-up your next big family event. Our most popular event is our wedding reception package, which
-        includes your own beautiful garden-setting; with catering, photography, and music included in your cost. Call us today to book your event or visit our services page and fill-out our reception form.
-              </p>
+  </figure>
+  <p>Whether you need to keep track of bills, write your next book, or email your children, we offer a full service business center. Computers, printers 
+    and scanning capabilities are available at each location. Plus, every long-term room has a desk with usb plug-in, phone, and a spacious working area </p>
+
+    <form action="thanks.html" method="GET">
+        <fieldset>
+        <legend>Long Term Stay Form</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Email<input type="email" name="stormcenter@gmail.com" required></label>
+                <label class="top">What Temple are you serving?<input type="text" name="zipcode" placeholder="73031" required></label>
+                <label class="top">Start Date<input type="date" name="todaysdate"></label>
+    </fieldset>
+    <fieldset>
+        <legend>Tell us about your stay length needs:</legend>
+            <label class="top">How long is your stay?<input type="text" name="accomodate" placeholder="4 months, 2 years, e.g. "></label>
+    </fieldset>
+   
+    <input type="submit" value="Submit Stay Information" class="submitBtn">
+  </form>
+  <br>
+  
+    
  
 </main>
 <footer class="clearfix">

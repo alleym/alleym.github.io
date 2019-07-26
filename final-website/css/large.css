@@ -46,6 +46,15 @@ main figure {width: 31%}
 
 div.google {column-count: 2;}
 
+/*----------- wedding page --------------*/
+div.weddingallery figure {
+    flex-basis: 26%;    
+}
+
+div.weddingallery2 figure {
+    flex-basis: 26%;    
+}
+
 /*----------- FOOTER --------------*/
 
 

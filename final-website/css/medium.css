@@ -48,6 +48,10 @@ main figure.pano img {width: 100%;}
 div.homegallery figure {
     flex-basis: 46%;    
 }
+div. figure {
+    flex-basis: 46%;    
+}
+
 
 /*--services page --*/
 .nonavbar {
@@ -82,15 +86,55 @@ main figcaption {
 }
 .pool img {width: 100%;}
 
+/*----------- long term mission page --------------*/
+figure.hotel1 img {
+    width: 100%;
+    float: left;
+    margin: 0; 
+    padding: 1rem;
+}
+figure.mission img {width: 100%;}
+
+figure.desk {
+    width: 100%;
+    float: right;
+    margin: 0;
+    padding 1rem;
+}
+figure.desk img {width: 100%}
 
 
-div.google {
-clear: both;
-column-count: 2;
-column-rule: 1px solid #aaa;
+/*----------- weddingpage --------------*/
+.cake img {
+    width: 100%;
+    float: left;
+    padding-right: 2rem;
+    margin: 0px;
+}
+.cake img {width;}
+div.weddingallery figure {
+    flex-basis: 46%;    
+}
+div.weddingallery {
+    flex-basis: 46%;    
 }
 
+div.weddingallery2 figure {
+    flex-basis: 46%;    
+}
+div.weddingallery2 {
+    flex-basis: 46%;    
+}
+
+
+
 /*----------- FOOTER --------------*/
+div.google {
+    clear: both;
+    column-count: 2;
+    column-rule: 1px solid #aaa;
+    }
+    
 
 footer {
     background-color: #a8aab7;

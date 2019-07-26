@@ -239,13 +239,54 @@ figure.hallservicepage img {
 figure.hallservicepage img {width: 100%;}
 
 /*--mission page--*/
-figure.missionary {
-    width: 50%;
+main figure.hotelone {
+    width: 100%;
     float: left;
     margin: 0; 
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
-figure.mission img {width: 100%;}
+main figure.hotelone img {width: 100%;}
+
+main figure.desk {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding 1rem;
+}
+main figure.desk img {width: 100%}
+/*----------- weddingpage --------------*/
+
+.cake img {
+    width: 100%;
+    float: center;
+    padding-right: 2rem;
+    margin: 0px;
+}
+.cake img {width: 100%;}
+.weddingtype {color: #2e9cca;}
+
+div.weddingallery  {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+div.wedingallery2 figure {
+    flex-basis: 96%;
+    margin: 1%;
+}
+div.weddingallery figure img {flex-basis: 100%;}
+
+div.weddingallery2  {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+div.wedingallery2 figure {
+    flex-basis: 96%;
+    margin: 1%;
+}
+div.weddingallery2 figure img {flex-basis: 100%;}
+
 
 /*----------- FOOTER --------------*/
 footer {
