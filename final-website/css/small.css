@@ -223,22 +223,23 @@ main figcaption {
     margin: 0;}
 .pool img {width: 100%;}
 
-figure.missionpage img {
+main figure.missionpage img {
     position: center;
     padding: 1rem;
     width: 100%;
 }
 
-figure.missionpage img {width: 100%;
+main figure.missionpage img {width: 100%;
 }
-figure.hallservicepage img {
+main figure.hallservicepage img {
     position: center;
     padding: 1rem;
     width: 100%;
 }
-figure.hallservicepage img {width: 100%;}
+main figure.hallservicepage img {width: 100%;}
 
 /*--mission page--*/
+
 main figure.hotelone {
     width: 100%;
     float: left;
@@ -254,6 +255,7 @@ main figure.desk {
     padding 1rem;
 }
 main figure.desk img {width: 100%}
+
 /*----------- weddingpage --------------*/
 
 .cake img {
@@ -309,7 +311,6 @@ div.copy {
     color: #ffffff;
     background-color: #2e9cca;
 }
-
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

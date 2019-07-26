@@ -1,11 +1,11 @@
-const weatherRequest = new XMLHttpRequest();
-weatherRequest.open("Get", "https://alleym.github.io/final-website/json/temple.json", true);
-weatherRequest.responeType = "json";
-weatherRequest.send();
-weatherRequest.onload = function () {
-   let weatherData = JSON.parse(weatherRequest.responseText);
-   console.log(weatherData);
+const cityINfo = new XMLHttpRequest();
+cityINfo.open("Get", "temple.json", true);
+cityINfo.responeType = "json";
+cityINfo.send();
+cityINfo.onload = function () {
+   let cityData = JSON.parse(cityINfo.responseText);
+   console.log(cityData);
 
-   document.getElementById("templename").innerHTML = dc.name;
+   document.getElementById("templename").innerHTML = cityData.oakland.name;
 
 }

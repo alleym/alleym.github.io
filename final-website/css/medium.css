@@ -73,6 +73,7 @@ div. figure {
     padding-right: 2rem;
 }
 .catering img {width: 100%;}
+
 main figcaption {
     text-align: center;
     font-size: .75rem;
@@ -87,8 +88,8 @@ main figcaption {
 .pool img {width: 100%;}
 
 /*----------- long term mission page --------------*/
-figure.hotel1 img {
-    width: 100%;
+figure.hotelone img {
+    width: 50%;
     float: left;
     margin: 0; 
     padding: 1rem;
